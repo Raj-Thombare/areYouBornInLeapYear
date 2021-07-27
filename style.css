@@ -2,11 +2,9 @@ body {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px 2rem;
-    text-align: center;
-    background-image: url(/images/img-blue.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 input {
@@ -25,6 +23,15 @@ input {
     display: block;
     margin: 1rem auto;
     padding: 1rem 2rem;
+}
+
+.section {
+    height: 200px; 
+    max-width: 600px;
+    width: 100%;
+    padding: 2.5rem;
+    margin: 10rem auto;
+    text-align: center;
 }
 
 .section2 {
