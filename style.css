@@ -27,7 +27,6 @@ input {
 }
 
 #output-div {
-    display: block;
     width: 50%;
     margin: 2rem auto;
     padding: 0rem;
