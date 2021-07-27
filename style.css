@@ -1,8 +1,9 @@
 body {
+    box-sizing: border-box;
     padding: 0px;
-    margin: 0px;
+    margin: 0px 2rem;
     text-align: center;
-    background-image: url(/images/map.webp);
+    background-image: url(/images/img-blue.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
