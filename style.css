@@ -1,0 +1,27 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+input {
+    width: 30vw;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#btn-continue {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+}
+
+#btn-check {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+}
+
+.section2 {
+    display: none;
+}
