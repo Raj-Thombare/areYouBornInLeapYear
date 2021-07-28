@@ -40,16 +40,16 @@ function checkBtnHandler() {
         const year = dateArray[2]
 
         if(isNaN(day) || isNaN(month) || isNaN(year)){
-            output.innerText = "Please enter an integer in valid format (DD/MM/YY)";
+            output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
         }
         else if(!Number.isInteger(Number(day)) ||!Number.isInteger(Number(month)) || !Number.isInteger(Number(year)) ){
-            output.innerText = "Please enter an integer in valid format (DD/MM/YY)";
+            output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
         }
         else if(31<day || 12<month || 2020<year || month<=0 || day<=0 || year<=0){
-            output.innerText = "Please enter an integer in valid format (DD/MM/YY)";
+            output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
         }
         else if(day>monthDays[month-1]){
-            output.innerText = "Please enter an integer in valid format (DD/MM/YY)";
+            output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
         }else{
 
             if(day==29 && month==2){
