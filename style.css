@@ -33,6 +33,10 @@ h2 {
     margin: 2rem 0rem;
 }
 
+h3 {
+    color: var(--secondary-color);
+}
+
 input {
     width: 70%;
     margin: 2rem 0rem;
@@ -74,4 +78,6 @@ button:hover{
     padding: 0rem;
     font-size: 2rem;
     font-weight: bold;
+    background-color: var(--highlight);
+    color: var(--primary-color);
 }

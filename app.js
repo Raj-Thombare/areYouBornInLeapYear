@@ -38,18 +38,18 @@ function checkBtnHandler() {
         const day = dateArray[0]
         const month = dateArray[1]
         const year = dateArray[2]
-
+        /* checks if user entered a string, if yes returns true otherwise false*/
         if(isNaN(day) || isNaN(month) || isNaN(year)){
             output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
-        }
+        }  /* checks if user entered a number, returns false cause used not operator*/        
         else if(!Number.isInteger(Number(day)) ||!Number.isInteger(Number(month)) || !Number.isInteger(Number(year)) ){
             output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
-        }
+        }          /* checks if day, month, year is valid, returns false*/
         else if(31<day || 12<month || 2020<year || month<=0 || day<=0 || year<=0){
             output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
-        }
+        }   /*checks if april,june,september,november shouldn't have 31 days, if it has it returns true*/
         else if(day>monthDays[month-1]){
-            output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
+            output.innerText = "Sorry!, the month you've entered should only have 30 or less days: format (DD/MM/YY)";
         }else{
 
             if(day==29 && month==2){
