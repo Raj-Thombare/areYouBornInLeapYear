@@ -7,9 +7,8 @@ var btnCheck = document.querySelector("#btn-check")
 var output = document.querySelector("#output-div")
 
 var Hi = "Hi ";
-var wishes = " !have a good day :D ";
-var leapYearMessage ="Your Birth year is a Leap Year!";
-var notLeapYearMessage ="Your Birth year is not a Leap Year!";
+var leapYearMessage ="Your Birth year is a Leap Year!😁😁😁";
+var notLeapYearMessage ="Your Birth year is not a Leap Year!☹️☹️☹️";
 const monthDays =[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 function isLeapYear(y){
@@ -23,7 +22,7 @@ function isLeapYear(y){
 function continueBtnHandler() {
     if (inputName.value) {
         var userInput = inputName.value;
-        userName.innerText = Hi + userInput + wishes;
+        userName.innerText = Hi + userInput + "!";
         sections[0].style.display = "none";
         sections[1].style.display = "block";
     } else {

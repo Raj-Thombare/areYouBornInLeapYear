@@ -1,37 +1,67 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root {
+    --primary-color: rgb(10, 25, 47);
+    --secondary-color: rgb(136, 146, 176);
+    --highlight: rgb(100, 255, 218);
+    --white-color: rgb(204, 214, 246);
+}
+
+* {
     box-sizing: border-box;
+    margin: 0px;
     padding: 0px;
-    margin: 0px 2rem;
-    display:flex;
+    background-color: rgb(10, 25, 47);
+    color: var(--white-color);
+    font-family: 'Architects Daughter', cursive;
+}
+
+#flex {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 30px;
+   
+}
+
+h2 {
+    font-size: 25px;
+    margin: 2rem 0rem;
 }
 
 input {
-    width: 50%;
-    margin: 1rem;
+    width: 70%;
+    margin: 2rem 0rem;
     padding: 1rem;
+    background-color: var(--white-color);
+    color: black;
 }
 
-#btn-continue {
-    display: block;
+button{
     margin: 1rem auto;
     padding: 1rem 2rem;
-}
-
-#btn-check {
+    border-radius: 3px;
     display: block;
-    margin: 1rem auto;
-    padding: 1rem 2rem;
+    color: var(--highlight);
+    background-color: transparent;
+    border: 1px solid var(--highlight);
 }
 
-.section {
-    height: 200px; 
+button:hover{
+    background-color: var(--highlight);
+    color: var(--primary-color);
+}
+
+.section { 
     max-width: 600px;
     width: 100%;
     padding: 2.5rem;
-    margin: 10rem auto;
     text-align: center;
+    border: 1px solid var(--highlight);
 }
 
 .section2 {
@@ -39,10 +69,9 @@ input {
 }
 
 #output-div {
-    width: 50%;
+    width: 100%;
     margin: 2rem auto;
     padding: 0rem;
-    height: 20vh;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
