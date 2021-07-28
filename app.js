@@ -34,7 +34,7 @@ function checkBtnHandler() {
     var date = inputDate.value;
 
     if (date) {
-        var dateArray = date.split(/[/,-]/)
+        var dateArray = date.split(['/'])
         const day = dateArray[0]
         const month = dateArray[1]
         const year = dateArray[2]
