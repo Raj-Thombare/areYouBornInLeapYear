@@ -12,11 +12,17 @@ var notLeapYearMessage ="Your Birth year is not a Leap Year!☹️☹️☹️";
 const monthDays =[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 function isLeapYear(y){
-    if ((0 == y % 4) && (0 != y % 100) || (0 == y % 400)) {
+    if(y%4===0){
+        if(y%100===0){
+            if(y%400===0){
+                return true
+            }else{
+                return false
+            }
+        }
         return true
-    } else {
-        return false
     }
+    return false
 };
 
 function continueBtnHandler() {
