@@ -45,7 +45,7 @@ function checkBtnHandler() {
         else if(!Number.isInteger(Number(day)) ||!Number.isInteger(Number(month)) || !Number.isInteger(Number(year)) ){
             output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
         }          /* checks if day, month, year is valid, returns false*/
-        else if(31<day || 12<month || 2020<year || month<=0 || day<=0 || year<=0){
+        else if(31<day || 12<month || 2021<year || month<=0 || day<=0 || year<=0){
             output.innerText = "Please enter an integer in a valid format (DD/MM/YY)";
         }   /*checks if april,june,september,november shouldn't have 31 days, if it has it returns true*/
         else if(day>monthDays[month-1]){
